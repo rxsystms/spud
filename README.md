@@ -2,6 +2,8 @@
 
 **S**pec-driven **P**roduct **U**X & **D**omain logic (SPUD).
 
+A VS Code extension. Search for "spud".
+
 Opinionated user-journey-as-code and business-process-as-code guide rails (with write-time validation) for product designers in the AI era.
 
 Problem: people set out to build a product without having fully thought through **what** they want to build. When there is ambiguity on **what** to build, many development iterations are burned as you figure-it-out-as-you-go.
@@ -21,6 +23,8 @@ If you encounter an issue or want to see a feature, simply open an issue here on
 
 
 ## Screenshots
+
+A picture paints a thousand words...
 
 Business process (yaml):
 
@@ -55,7 +59,7 @@ Auto-rendered tokenomics (dot diagram):
 ![](./resources/tokenomics2.png)
 
 
-## Recommended accompanying VScode extension:
+## Recommended accompanying VScode extensions:
 
 - Redhat yaml extension
 - Error Lens (usernamehw.errorlens)
