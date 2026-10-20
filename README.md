@@ -12,7 +12,13 @@ SPUD enables you to quickly generate flow diagrams that are both human (.svg fil
 
 SPUD's approach reduces iteration cycles and reduces the time it takes to build an end-to-end product while forcing you, a human, to *think up-front* and articulate at a high level **what** you're building *prior* to any implementation.
 
+
 ![SPUD](./resources/logo.png)
+
+## Feature requests
+
+If you encounter an issue or want to see a feature, simply open an issue here on github. We'd love to hear from you.
+
 
 ## Screenshots
 
