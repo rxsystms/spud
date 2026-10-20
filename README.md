@@ -4,6 +4,8 @@
 
 A VS Code extension. Search for "spud".
 
+![](./resources/vscode.png)
+
 Opinionated user-journey-as-code and business-process-as-code guide rails (with write-time validation) for product designers in the AI era.
 
 Problem: people set out to build a product without having fully thought through **what** they want to build. When there is ambiguity on **what** to build, many development iterations are burned as you figure-it-out-as-you-go.
