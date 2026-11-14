@@ -1,6 +1,6 @@
 {
   "name": "spud",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "publisher": "rxsystms",
   "license": "LICENSE.md",
   "repository": "https://github.com/rxsystms/spud",
@@ -8,6 +8,6 @@
     "vscode": "^1.90.0"
   },
   "dependencies": {
-    "yaml": "^2.8.1"
+    "yaml": "^2.9.1"
   }
 }

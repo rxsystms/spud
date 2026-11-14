@@ -615,5 +615,3 @@ Exponential: (f(t)=\dfrac{e^{5t}-1}{e^5-1})
 
 For an allocation of (N) tokens, the amount released is (Nf(t))
 ```
-
-
