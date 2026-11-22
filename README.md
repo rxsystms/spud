@@ -74,6 +74,7 @@ Auto-rendered tokenomics (dot diagram):
 2. user-journey-as-code
 3. product-roadmap-as-code
 4. tokenomics-as-code
+5. product-requirement-document-as-code
 
 
 
@@ -615,3 +616,42 @@ Exponential: (f(t)=\dfrac{e^{5t}-1}{e^5-1})
 
 For an allocation of (N) tokens, the amount released is (Nf(t))
 ```
+
+## 5. prd (product requirements document)
+
+A product requirement document is written in yaml (the top level key in the .yaml file should be "prd"). It captures the problem, goals, requirements and success metrics for a product area: the *what* and *why*, never the *how*.
+
+Unlike the other document types, a PRD is document-like rather than graph-like. Saving a PRD renders a formatted markdown one-pager to `out/<file>.md` and a one-pager card to `out/<file>.svg` (no `.dot` file is produced). The usual lifecycle rules apply: `status: draft` routes output to `out/draft/`, and stale outputs from other statuses are removed. Any string value ending in `.md` creates a linked stub document in the sibling `docs/` directory, for long-form prose that doesn't belong in yaml.
+
+```yaml
+prd:
+  id: BROWSE_CATALOGUE
+  version: 0.0.1
+  status: draft
+  name: Public property catalogue browsing
+  description: One-line purpose of this PRD.
+  problem: >
+    The user or business pain being solved.
+  personas: [PUBLIC]
+  goals:
+    - Establish trust in the platform
+  non_goals:
+    - Signup, login, payments
+  functional_requirements:        # WHAT the system does
+    - id: REQ_CATALOGUE_VIEW
+      name: Browse catalogue without account
+      description: PUBLIC can view all active listings with no auth.
+      priority: must              # MoSCoW: must | should | could | wont
+      acceptance_criteria:
+        - Catalogue renders within 2s on first load
+  non_functional_requirements:    # HOW WELL it does it
+    - id: NFR_LOAD_TIME
+      category: performance       # performance | security | usability | accessibility | localisation | reliability | scalability | compliance
+      description: Catalogue page is fast on typical connections.
+      priority: must
+      target: p95 first contentful paint < 2s   # a measurable target is required
+  success_metrics:
+    - 40% of visitors view 3+ properties
+```
+
+Optional sections: `dependencies`, `risks` (with 1-10 `severity`), `open_questions`, `milestones` and `supporting_ujs` (cross-references to `ujac.id` values).
