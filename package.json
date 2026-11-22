@@ -1,9 +1,12 @@
 {
   "name": "spud",
-  "version": "0.0.18",
+  "version": "0.0.20",
   "publisher": "rxsystms",
   "license": "LICENSE.md",
-  "repository": "https://github.com/rxsystms/spud",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rxsystms/spud.git"
+  },
   "engines": {
     "vscode": "^1.146.0"
   },
